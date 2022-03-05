@@ -23,18 +23,18 @@
     "icon": "https://favicons.githubusercontent.com/api.imap.fi",
     "slug": "palvelun-api",
     "status": "down",
-    "uptime": "0.07%",
-    "uptimeDay": "0.07%",
-    "uptimeWeek": "0.07%",
-    "uptimeMonth": "0.07%",
-    "uptimeYear": "0.07%",
+    "uptime": "0.01%",
+    "uptimeDay": "0.01%",
+    "uptimeWeek": "0.01%",
+    "uptimeMonth": "0.01%",
+    "uptimeYear": "0.01%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2022-03-05": 26
+      "2022-03-05": 278
     }
   },
   {
@@ -78,17 +78,19 @@
     "url": "https://mail.imap.fi",
     "icon": "https://favicons.githubusercontent.com/mail.imap.fi",
     "slug": "webmail",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "down",
+    "uptime": "99.96%",
+    "uptimeDay": "99.96%",
+    "uptimeWeek": "99.96%",
+    "uptimeMonth": "99.96%",
+    "uptimeYear": "99.96%",
     "time": 703,
     "timeDay": 703,
     "timeWeek": 703,
     "timeMonth": 703,
     "timeYear": 703,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2022-03-05": 0
+    }
   }
 ]
