@@ -7,6 +7,10 @@ sites:
     url: https://imap.fi
   - name: Palvelun API
     url: https://api.imap.fi
+    expectedStatusCodes:
+      - 200
+      - 201
+      - 404
   - name: IMAP (viestien vastaanottaminen)
     check: "tcp-ping"
     url: server.imap.fi
@@ -39,7 +43,7 @@ status-website:
 i18n:
   activeIncidents: Aktiiviset virheet
   allSystemsOperational: Kaikki palvelut toimivat
-  incidentReport: "Incident #$NUMBER report →"
+  incidentReport: "Virheen #$NUMBER raportti →"
   activeIncidentSummary: Avattu $DATE $POSTS:llä julkaisulla
   incidentTitle: Virheen numero $NUMBER tiedot
   incidentDetails: Virheen tiedot
@@ -52,7 +56,7 @@ i18n:
   incidentCommentSummary: Julkaistu $DATE kirjoittajana $AUTHOR
   incidentBack: ← Palaa kaikkiin virheisiin
   pastIncidents: Edelliset virheet
-  pastIncidentsResolved: Resolved in $MINUTES minutes with $POSTS posts
+  pastIncidentsResolved: Korjattu $MINUTES minuutissa $POSTS:llä vastauksella
   liveStatus: Reaaliaikainen tilanne
   overallUptime: "Kokonaispäälläoloaika: $UPTIME"
   overallUptimeTitle: Kokonaispäälläoloaika
@@ -71,17 +75,17 @@ i18n:
   rateLimitExceededIntro: Olet saavuttanut tunnittaisen kyselyrajan, jotenka joudut odottamaan ennen kuin pääset taas vierailemaan sivustolla. Vaihtoehtoisesti voit lisätä GitHub Personal Access Tokenin jatkaaksesi tämän sivuston käyttöä.
   rateLimitExceededWhatDoesErrorMean: Mitä tämä virhe tarkoittaa?
   rateLimitExceededErrorMeaning: This website uses the GitHub API to access real-time data about our websites' status. By default, GitHub allows each IP address 60 requests per hour, which you have consumed.
-  rateLimitExceededErrorHowCanFix: How can I fix it?
+  rateLimitExceededErrorHowCanFix: Kuinka voin korjata tämän?
   rateLimitExceededErrorFix: You can wait for another hour and your IP address' limit will be restored. Alternately, you can add your GitHub Personal Access Token, which gives you an additional 5,000 requests per hour.
-  rateLimitExceededGeneratePAT: Learn how to generate a Personal Access Token
-  rateLimitExceededHasSet: You have a personal access token set.
-  rateLimitExceededRemoveToken: Remove token
+  rateLimitExceededGeneratePAT: Opi Personal Access Tokenin generointi
+  rateLimitExceededHasSet: Sinulla on personal access token asetettu.
+  rateLimitExceededRemoveToken: Poista token
   rateLimitExceededGitHubPAT: GitHub Personal Access Token
-  rateLimitExceededCopyPastePAT: Copy and paste your token
-  rateLimitExceededSaveToken: Save token
-  errorTitle: An error occurred
+  rateLimitExceededCopyPastePAT: Kopioi ja liitä tokenisi
+  rateLimitExceededSaveToken: Tallenna token
+  errorTitle: Ilmeni virhe.
   errorIntro: An error occurred in trying to get the latest status details.
-  errorText: You can try again in a few moments.
+  errorText: Voit kokeilla uudestaan muutaman minuutin kuluttua.
   errorHome: Mene etusivulle
   pastScheduledMaintenance: Past Scheduled Maintenance
   scheduledMaintenance: Scheduled Maintenance
