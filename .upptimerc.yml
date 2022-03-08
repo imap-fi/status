@@ -6,11 +6,7 @@ sites:
   - name: Sivusto
     url: https://imap.fi
   - name: Palvelun API
-    url: https://api.imap.fi
-    expectedStatusCodes:
-      - 200
-      - 201
-      - 404
+    url: https://api.imap.fi/heartbeat
   - name: IMAP (viestien vastaanottaminen)
     check: "tcp-ping"
     url: server.imap.fi
