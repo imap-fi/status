@@ -7,14 +7,8 @@ sites:
     url: https://imap.fi
   - name: Palvelun API
     url: https://api.imap.fi/heartbeat
-  - name: IMAP (viestien vastaanottaminen)
-    check: "tcp-ping"
-    url: server.imap.fi
-    port: 143
-  - name: SMTP (viestien lähettäminen)
-    check: "tcp-ping"
-    url: server.imap.fi
-    port: 587
+  - name: Sähköpostipalvelin
+    url: https://server.imap.fi # investigate why tcp-ping did not work
   - name: Webmail
     url: https://mail.imap.fi
 
